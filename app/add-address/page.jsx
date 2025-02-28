@@ -1,12 +1,11 @@
-'use client'
-import { assets } from "@/assets/assets";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+'use client';
+import { assets } from "assets/assets";
+import Navbar from "components/Navbar";
+import Footer from "components/Footer";
 import Image from "next/image";
 import { useState } from "react";
 
 const AddAddress = () => {
-
     const [address, setAddress] = useState({
         fullName: '',
         phoneNumber: '',
@@ -14,12 +13,11 @@ const AddAddress = () => {
         area: '',
         city: '',
         state: '',
-    })
+    });
 
     const onSubmitHandler = async (e) => {
         e.preventDefault();
-
-    }
+    };
 
     return (
         <>
